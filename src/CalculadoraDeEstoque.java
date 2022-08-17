@@ -6,5 +6,11 @@ public class CalculadoraDeEstoque {
         double soma = livroJava + livroTDD;
 
         System.out.println("O total em estoque é " + soma);
+
+        if (soma < 150) {
+            System.out.println("Seu estoque está muito baixo!");
+        } else {
+            System.out.println("Seu estoque está bom");
+        }
     }
 }
