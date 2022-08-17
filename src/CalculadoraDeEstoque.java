@@ -1,20 +1,10 @@
 public class CalculadoraDeEstoque {
     public static void main(String[] args) {
-        //Declaração e atribuição de Variáveis.
-        // double livroJava = 59.90;
-        // double livroTDD = 59.90;
-
-        //While
 
         double soma = 0;
-        int contador = 0;
 
-        // double soma = livroJava + livroTDD;
-
-        while (contador < 35) {
-            double valorDoLivro = 59.90;
-            soma += valorDoLivro;
-            contador += 1;
+        for (double i = 0; i < 35 ; i ++){
+            soma += 59.90;
         }
 
         System.out.println("O total em estoque é " + soma);
