@@ -9,6 +9,8 @@ public class CalculadoraDeEstoque {
 
         if (soma < 150) {
             System.out.println("Seu estoque está muito baixo!");
+        } else if(soma >= 2000) {
+            System.out.println("Seu estoque está muito alto");
         } else {
             System.out.println("Seu estoque está bom");
         }
