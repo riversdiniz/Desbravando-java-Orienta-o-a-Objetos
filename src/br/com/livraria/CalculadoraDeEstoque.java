@@ -1,13 +1,12 @@
+package br.com.livraria;
+
 public class CalculadoraDeEstoque {
     public static void main(String[] args) {
 
         double soma = 0;
-        int contador = 0;
 
-        while (contador < 35) {
-            double valorDoLivro = 59.90;
-            soma += valorDoLivro;
-            contador += 1;
+        for (double i = 0; i < 35; i++) {
+            soma += 59.90;
         }
 
         System.out.println("O total em estoque é " + soma);
