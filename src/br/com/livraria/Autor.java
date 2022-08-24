@@ -1,8 +1,8 @@
 package br.com.livraria;
 
 public class Autor {
-    String nomeDoAutor;
-    String emailDoAutor;
-    String cpfDoAutor;
+    String nome;
+    String email;
+    String cpf;
 
 }
