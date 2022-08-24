@@ -27,7 +27,7 @@ public class CadastroDeLivros {
         outroLivro.nome = "Lógica de Programação";
         outroLivro.descricao = "Crie seus primeiros programas";
         outroLivro.valor = 59.90;
-        livro.isbn = "978-85-66250-22-0";
+        outroLivro.isbn = "978-85-66250-22-0";
 
         outroLivro.autor = outroAutor;
 
