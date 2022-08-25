@@ -8,7 +8,7 @@ public class RegrasDeDesconto {
 
         System.out.println("Valor atual: " + livro.valor);
 
-        if (!livro.aplicaDescontoDe(0.1)) {
+        if (!livro.aplicaDescontoDe(0.4)) {
             System.out.println("Desconto não pode ser maior do que 30%");
         } else {
             System.out.println("Valor com desconto: " + livro.valor);

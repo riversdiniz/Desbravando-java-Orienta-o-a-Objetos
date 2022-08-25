@@ -8,7 +8,7 @@ public class Livro {
     Autor autor;
 
     public Livro() {
-        System.out.println("Novo livro criado");
+
     }
 
     void mostrarDetalhes() {
