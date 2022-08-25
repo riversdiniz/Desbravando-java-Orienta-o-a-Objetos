@@ -16,8 +16,4 @@ public class Livro {
         autor.mostrarDetalhes();
         System.out.println("--");
     }
-
-    public void aplicaDescontoDe(double porcentagem) {
-        this.valor -= this.valor * porcentagem;
-    }
 }
