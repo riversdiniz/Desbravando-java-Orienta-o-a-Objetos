@@ -7,6 +7,10 @@ public class Livro {
     String isbn;
     Autor autor;
 
+    public Livro() {
+        System.out.println("Novo livro criado");
+    }
+
     void mostrarDetalhes() {
         System.out.println("Mostrando detablhes do livro");
         System.out.println("Nome: " + nome);
@@ -17,7 +21,11 @@ public class Livro {
         System.out.println("--");
     }
 
-    public void aplicaDescontoDe(double porcentagem) {
+    public boolean aplicaDescontoDe(double porcentagem) {
+        if (porcentagem > 0.3) {
+            return false;
+        }
         this.valor -= this.valor * porcentagem;
+        return true;
     }
 }

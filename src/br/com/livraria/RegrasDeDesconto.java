@@ -8,8 +8,10 @@ public class RegrasDeDesconto {
 
         System.out.println("Valor atual: " + livro.valor);
 
-        livro.valor -= livro.valor * 0.1;
-
-        System.out.println("Valor com desconto: " + livro.valor);
+        if (!livro.aplicaDescontoDe(0.1)) {
+            System.out.println("Desconto não pode ser maior do que 30%");
+        } else {
+            System.out.println("Valor com desconto: " + livro.valor);
+        }
     }
 }
