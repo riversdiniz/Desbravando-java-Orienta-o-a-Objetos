@@ -18,7 +18,7 @@ public class RegrasDeDesconto {
         Ebook ebook = new Ebook(autor);
         ebook.setValor(29.90);
 
-        if (!ebook.aplicaDescontoDe(0.3)) {
+        if (!ebook.aplicaDescontoDe(0.15)) {
             System.out.println("Desconto no ebook não pode ser maior do que 15%");
         } else {
             System.out.println("Valor do ebook com desconto: " + ebook.getValor());
