@@ -4,6 +4,10 @@ public class Ebook extends Livro {
     
     private String waterMark;
 
+    public Ebook(Autor autor){
+        super(autor);
+    }
+
     public void setWaterMark() {
         this.waterMark = waterMark;
     }
