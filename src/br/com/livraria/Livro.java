@@ -1,6 +1,6 @@
 package br.com.livraria;
 
-public class Livro {
+public abstract class Livro {
     private String nome;
     private String descricao;
     private double valor;
@@ -11,7 +11,16 @@ public class Livro {
     public Livro(Autor autor){
         this.autor = autor;
         this.isbn = "000-00-00000-00-0";
-        this.impresso = true;
+        // this.impresso = true;
+    }
+
+    public boolean aplicaDescontoDe(double porcentagem) {
+        return false;
+        // if (porcentagem > 0.3) {
+        //     return false;
+        // }
+        // this.valor -= this.valor * porcentagem;
+        // return true;
     }
 
     public String getNome() {
@@ -62,13 +71,5 @@ public class Livro {
         System.out.println("ISBN: " + isbn);
         autor.mostrarDetalhes();
         System.out.println("--");
-    }
-
-    public boolean aplicaDescontoDe(double porcentagem) {
-        if (porcentagem > 0.3) {
-            return false;
-        }
-        this.valor -= this.valor * porcentagem;
-        return true;
     }
 }
