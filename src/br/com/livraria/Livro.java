@@ -14,7 +14,7 @@ public abstract class Livro {
         // this.impresso = true;
     }
 
-    public boolean aplicaDescontoDe(double porcentagem) {
+    public abstract boolean aplicaDescontoDe(double porcentagem) {
         return false;
         // if (porcentagem > 0.3) {
         //     return false;
