@@ -8,7 +8,7 @@ public class RegistroDeVendas {
 
         LivroFisico fisico = new LivroFisico(autor);
         fisico.setNome("Test-Driven Development");
-        fisico.setValor(29.90);
+        fisico.setValor(59.90);
 
         Ebook ebook = new Ebook(autor);
         ebook.setNome("Test-Driven Development");
