@@ -1,6 +1,6 @@
 package br.com.livraria;
 
-public abstract class Livro {
+public abstract class Livro implements Produto {
     private String nome;
     private String descricao;
     private double valor;
@@ -14,7 +14,7 @@ public abstract class Livro {
         // this.impresso = true;
     }
 
-    public abstract boolean aplicaDescontoDe(double porcentagem) {
+    public boolean aplicaDescontoDe(double porcentagem) {
         return false;
         // if (porcentagem > 0.3) {
         //     return false;
