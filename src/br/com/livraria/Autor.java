@@ -1,4 +1,4 @@
-package br.com.livraria.produtos;
+package br.com.livraria;
 
 public class Autor {
     String nome;

@@ -1,6 +1,6 @@
-package br.com.livraria.teste;
+package br.com.livraria.testes;
 
-import br.com.livraria.produtos.Autor;
+import br.com.livraria.Autor;
 import br.com.livraria.produtos.CarrinhoDeCompras;
 import br.com.livraria.produtos.Ebook;
 import br.com.livraria.produtos.LivroFisico;

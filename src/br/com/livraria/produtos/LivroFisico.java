@@ -1,5 +1,7 @@
 package br.com.livraria.produtos;
 
+import br.com.livraria.Autor;
+
 public class LivroFisico extends Livro implements Promocional {
     
     public LivroFisico(Autor autor) {

@@ -1,5 +1,7 @@
 package br.com.livraria.produtos;
 
+import br.com.livraria.Autor;
+
 public abstract class Livro implements Produto {
     private String nome;
     private String descricao;

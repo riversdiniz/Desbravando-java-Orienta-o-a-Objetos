@@ -1,4 +1,4 @@
-package br.com.livraria.teste;
+package br.com.livraria.testes;
 
 public class CalculadoraDeEstoque {
     public static void main(String[] args) {
