@@ -21,6 +21,10 @@ public class RegistroDeVendas {
 
         CarrinhoDeCompras carrinho = new CarrinhoDeCompras();
 
+        if (fisico.aplicaDescontoDe10Porcento()) {
+            System.out.println("Valor agora é: " + fisico.getValor());
+        }
+
         carrinho.adiciona(fisico);
         carrinho.adiciona(ebook);
 
