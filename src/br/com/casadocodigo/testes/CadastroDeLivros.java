@@ -25,7 +25,7 @@ public class CadastroDeLivros {
         outroAutor.setEmail("paulo.silveira@caelum.com.br");
         outroAutor.setCpf("123.456.789.10");
 
-        Livro outroLivro = new LivroFisico(autor);
+        Livro outroLivro = new LivroFisico(outroAutor);
         outroLivro.setNome("Lógica de Programação");
         outroLivro.setDescricao("Crie seus primeiros programas");
         outroLivro.setValor(59.90);
