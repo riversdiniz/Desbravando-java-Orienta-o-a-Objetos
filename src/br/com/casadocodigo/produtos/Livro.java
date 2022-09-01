@@ -25,6 +25,23 @@ public abstract class Livro implements Produto {
         // return true;
     }
 
+    public void mostrarDetalhes() {
+        System.out.println("Mostrando detablhes do livro");
+        System.out.println("Nome: " + nome);
+        System.out.println("Descrição: " + descricao);
+        System.out.println("Valor: " + valor);
+        System.out.println("ISBN: " + isbn);
+
+        if (this.temAutor) {
+            autor.mostrarDetalhes();
+        }
+        System.out.println("--");
+    }
+
+    boolean temAutor() {
+        return this.autor != null;
+    }
+
     public String getNome() {
         return nome;
     }
@@ -63,15 +80,5 @@ public abstract class Livro implements Produto {
 
     public void setAutor(Autor autor) {
         this.autor = autor;
-    }
-
-    public void mostrarDetalhes() {
-        System.out.println("Mostrando detablhes do livro");
-        System.out.println("Nome: " + nome);
-        System.out.println("Descrição: " + descricao);
-        System.out.println("Valor: " + valor);
-        System.out.println("ISBN: " + isbn);
-        autor.mostrarDetalhes();
-        System.out.println("--");
     }
 }
