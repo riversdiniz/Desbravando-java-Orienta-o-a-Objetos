@@ -1,7 +1,9 @@
-package br.com.casadocodigo.produtos;
+package br.com.casadocodigo.livraria;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import br.com.casadocodigo.produtos.Produto;
 
 public class CarrinhoDeCompras {
 

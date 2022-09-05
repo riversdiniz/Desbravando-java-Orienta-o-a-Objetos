@@ -3,7 +3,7 @@ package br.com.casadocodigo.testes;
 import java.util.List;
 
 import br.com.casadocodigo.livraria.Autor;
-import br.com.casadocodigo.produtos.CarrinhoDeCompras;
+import br.com.casadocodigo.livraria.CarrinhoDeCompras;
 import br.com.casadocodigo.produtos.Ebook;
 import br.com.casadocodigo.produtos.LivroFisico;
 import br.com.casadocodigo.produtos.Produto;
