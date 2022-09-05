@@ -11,4 +11,8 @@ public class GerenciadorDeCupons {
         " CUP 14 ", " CUP 52 ", " CUP 21 ", " CUP 221 ", " CUP 91 ", 
         " CUP 327 ", " CUP 410 ", " CUP 275 ", " CUP 484 ", " CUP 207 ");
     }
+
+    public boolean validaCupom(String cupom) {
+        return this.cupons.contains(cupom);
+    }
 }
