@@ -1,9 +1,12 @@
 package br.com.casadocodigo.testes;
 
+import java.util.List;
+
 import br.com.casadocodigo.livraria.Autor;
 import br.com.casadocodigo.produtos.CarrinhoDeCompras;
 import br.com.casadocodigo.produtos.Ebook;
 import br.com.casadocodigo.produtos.LivroFisico;
+import br.com.casadocodigo.produtos.Produto;
 
 public class RegistroDeVendas {
     public static void main(String[] args) {
@@ -28,6 +31,12 @@ public class RegistroDeVendas {
         carrinho.adiciona(fisico);
         carrinho.adiciona(ebook);
 
-        System.out.println("Total " + carrinho.getTotal());
+        System.out.println("Total: " + carrinho.getTotal());
+        
+        List<Produto> produtos = carrinho.getProdutos();
+
+        for (Produto produto : produtos) {
+            System.out.println(produto);
+        }
     }
 }

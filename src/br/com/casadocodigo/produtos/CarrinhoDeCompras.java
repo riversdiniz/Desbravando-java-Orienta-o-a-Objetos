@@ -1,14 +1,15 @@
 package br.com.casadocodigo.produtos;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class CarrinhoDeCompras {
 
     private double total;
-    private ArrayList<Produto> produtos;
+    private List<Produto> produtos;
 
     public CarrinhoDeCompras() {
-        this.produtos = new ArrayList<>();
+        this.produtos = new ArrayList<Produto>();
     }
 
     public void adiciona(Produto produto) {
@@ -23,7 +24,7 @@ public class CarrinhoDeCompras {
         return total;
     }
 
-    public ArrayList<Produto> getProdutos() {
+    public List<Produto> getProdutos() {
         return produtos;
     }
 }
