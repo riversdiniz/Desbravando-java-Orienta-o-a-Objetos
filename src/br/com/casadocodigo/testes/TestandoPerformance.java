@@ -1,13 +1,13 @@
 package br.com.casadocodigo.testes;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.HashSet;
+import java.util.Set;
 
 public class TestandoPerformance {
     
     public static void main(String[] args) {
         
-        List<String> colecao = new ArrayList<String>();
+        Set<String> colecao = new HashSet<String>();
 
         for(int i = 0; i < 100000; i++) {
             colecao.add("Item " + i);
