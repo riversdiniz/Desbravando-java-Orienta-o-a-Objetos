@@ -17,7 +17,7 @@ public class GerenciadorDeCupons {
         cupons.put("CUPOM60", 60.0);
     }
 
-    public boolean validaCupom(String cupom) {
-        return this.cupons.containsKey(cupom);
+    public Double validaCupom(String cupom) {
+        return this.cupons.get(cupom);
     }
 }
