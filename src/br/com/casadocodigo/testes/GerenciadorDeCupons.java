@@ -1,23 +1,23 @@
 package br.com.casadocodigo.testes;
 
-import java.util.Arrays;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
 public class GerenciadorDeCupons {
     
-    private Set<String> cupons;
+    private Map<String, Double> cupons;
 
     public GerenciadorDeCupons() {
-        this.cupons = new HashSet<String>();
+        this.cupons = new HashMap<>();
 
-        cupons.addAll(Arrays.asList(" CUP 74 ", " CUP 158 ", 
-        " CUP 14 ", " CUP 52 ", " CUP 21 ", " CUP 221 ", " CUP 91 ", 
-        " CUP 327 ", " CUP 410 ", " CUP 275 ", " CUP 484 ", " CUP 207 "));
+        cupons.put("CUPOM10", 10.0);
+        cupons.put("CUPOM20", 20.0);
+        cupons.put("CUPOM30", 30.0);
+        cupons.put("CUPOM40", 40.0);
+        cupons.put("CUPOM50", 50.0);
+        cupons.put("CUPOM60", 60.0);
     }
 
     public boolean validaCupom(String cupom) {
-        return this.cupons.contains(cupom);
+        return this.cupons.containsKey(cupom);
     }
 }
