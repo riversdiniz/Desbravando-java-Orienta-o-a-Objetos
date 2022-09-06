@@ -1,4 +1,4 @@
-package br.com.casadocodigo.produtos;
+package br.com.casadocodigo.testes;
 
 import java.util.Date;
 

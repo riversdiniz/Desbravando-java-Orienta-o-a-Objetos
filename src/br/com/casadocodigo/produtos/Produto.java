@@ -1,6 +1,7 @@
 package br.com.casadocodigo.produtos;
 
-public interface Produto extends Comparable<Produto> {
+public interface Produto {
+    // public interface Produto extends Comparable<Produto> {
     
     double getValor();
 }
